@@ -44,17 +44,12 @@ public class Main {
         System.out.println("Consulta 2 : nombre y apellido de las personas con el mismo apellido");
         for (Personas persona : personas){
             String apellidoActual=persona.getApellido();
-            boolean mismoApellido=false;
 
             for (Personas otraPersona : personas){
-                if (!personas.equals(otraPersona) && otraPersona.getApellido().equals(apellidoActual)) {
-                    mismoApellido=true;
-                    break;
-                }
+                if (!personas.equals(otraPersona) && otraPersona.getApellido().equals(apellidoActual))
+                    System.out.println(persona.getNombre() + " " + persona.getApellido());
             }
-            if (mismoApellido){
-                System.out.println(persona.getNombre() + " " + persona.getApellido());
-            }
+
         }
 
         System.out.println("Consulta 3 \n Mostrar el DNI mayor ");

@@ -110,5 +110,50 @@ public class Cliente extends Main{
         System.out.print("ingrese nombre: ");
         return scanner.nextLine();
     }
+    public static String apellido() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(" Apellido: ");
+        return scanner.nextLine();
+    }
+    public static int edad() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Edad: ");
+        return Integer.parseInt(scanner.nextLine());
+    }
+    public static String sexo() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Sexo: ");
+        return scanner.nextLine();
+    }
+    public static String direccion() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Direccion: ");
+        return scanner.nextLine();
+    }
+    public static int telefono() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Telefono: ");
+        return Integer.parseInt(scanner.nextLine());
+    }
+    public static int num_cuenta() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(" Numero de Cuenta: ");
+        return Integer.parseInt(scanner.nextLine());
+    }
+    public static int dinero() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(" Dinero Depositado: ");
+        return Integer.parseInt(scanner.nextLine());
+    }
+    public static int fecha_alta() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Fecha de Alta: ");
+        return Integer.parseInt(scanner.nextLine());
+    }
+    public static int fecha_baja() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(" Fecha de Baja: ");
+        return Integer.parseInt(scanner.nextLine());
+    }
 
 }
